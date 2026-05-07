@@ -26,7 +26,7 @@ class PieceController extends Controller
             });
         }
 
-        return response()->json($query->paginate(10));
+        return response()->json($query->paginate(100));
     }
 
     public function store(Request $request, $block_id)
